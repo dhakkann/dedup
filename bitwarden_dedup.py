@@ -2,7 +2,7 @@ import json
 
 # Your RAM disk file paths here
 VAULT_WITH_DUPS_PATH = "/storage/emulated/0/Download/bitwarden_export_20221118234448.json"
-VAULT_DEDUPED_OUTPUT_PATH = "/home/y_unencrypted_deduped_bitwarden_export.json"
+VAULT_DEDUPED_OUTPUT_PATH = "/storage/emulated/0/Download/dedup.json"
 
 def dedup(vault_with_dups_path, vault_deduped_output_path, paranoid=True):
     with open(vault_with_dups_path, encoding='utf-8', mode='r') as vaultfile:
